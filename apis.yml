@@ -1,0 +1,31 @@
+aid: department-of-education
+name: Department of Education
+description: >-
+  Americas education data Data Profiles from U.S. Department of Education.
+  search Search. Data Profiles by category
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API
+created: '2024-12-03'
+modified: '2024-12-03'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/department-of-education/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: department-of-education:department-of-education
+    name: Department of Education
+    description: >-
+      Americas education data Data Profiles from U.S. Department of Education.
+      search Search. Data Profiles by category
+    humanURL: https://data.ed.gov
+    tags:
+      - API
+    properties:
+      - type: Documentation
+        url: https://data.ed.gov
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
