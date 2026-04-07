@@ -11,8 +11,8 @@ apis:
       - url: https://data.ed.gov
         type: Documentation
     description: >-
-      Americas education data Data Profiles from U.S. Department of Education.
-      search Search. Data Profiles by category
+      Americas education data Data Profiles from U.S. Department of Education. search
+      Search. Data Profiles by category.
 name: Department of Education
 tags:
   - Federal Government
@@ -24,10 +24,10 @@ created: '2024-12-03'
 modified: '2026-03-16'
 position: Consuming
 description: >-
-  The U.S. Department of Education (ED) is a federal agency that manages and
-  coordinates federal assistance to education, and establishes policy for it.
-  The ED's mission is to promote student achievement and preparation for global
-  competitiveness, and to ensure equal access to education. 
+  The U.S. Department of Education (ED) is a federal agency that manages and coordinates
+  federal assistance to education, and establishes policy for it. The ED's mission
+  is to promote student achievement and preparation for global competitiveness, and
+  to ensure equal access to education.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
