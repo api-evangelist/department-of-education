@@ -1,0 +1,42 @@
+name: Department of Education Capabilities
+description: >-
+  Capabilities exposed by the U.S. Department of Education's public APIs and
+  data assets, including College Scorecard, the Open Data Platform, IPEDS,
+  and EDFacts.
+capabilities:
+  - name: Institution Search
+    description: Search postsecondary schools by name, location, type, and outcomes.
+    api: department-of-education:college-scorecard-api
+  - name: Field-of-Study Lookup
+    description: Retrieve program-level cost, debt, and earnings outcomes by CIP code.
+    api: department-of-education:college-scorecard-api
+  - name: Cost and Aid Data
+    description: Return tuition, fees, and average net price for institutions.
+    api: department-of-education:college-scorecard-api
+  - name: Completion Outcomes
+    description: Retrieve graduation, retention, and completion rates by institution.
+    api: department-of-education:college-scorecard-api
+  - name: Earnings Outcomes
+    description: Return median earnings of former students after enrollment.
+    api: department-of-education:college-scorecard-api
+  - name: API Key Management
+    description: Issue and rate-limit API keys via api.data.gov.
+    api: department-of-education:college-scorecard-api
+  - name: Dataset Search
+    description: Search and discover datasets published on data.ed.gov.
+    api: department-of-education:open-data-platform-api
+  - name: Dataset Retrieval
+    description: Fetch package metadata and resource files via CKAN actions.
+    api: department-of-education:open-data-platform-api
+  - name: Group and Tag Browsing
+    description: Browse datasets by groups, organizations, and tags.
+    api: department-of-education:open-data-platform-api
+  - name: IPEDS Bulk Downloads
+    description: Download CSV files and Access databases for postsecondary statistics.
+    api: department-of-education:ipeds-data
+  - name: Find Your College
+    description: Compare institutions interactively on the NCES Find Your College tool.
+    api: department-of-education:ipeds-data
+  - name: EDFacts Data Files
+    description: Download PK-12 state-reported data files.
+    api: department-of-education:edfacts-data

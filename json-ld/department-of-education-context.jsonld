@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "ed": "https://collegescorecard.ed.gov/data/",
+    "School": {
+      "@id": "https://schema.org/CollegeOrUniversity",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "name": "https://schema.org/name",
+        "city": "https://schema.org/addressLocality",
+        "state": "https://schema.org/addressRegion",
+        "zip": "https://schema.org/postalCode",
+        "url": "https://schema.org/url"
+      }
+    },
+    "Cost": {
+      "@id": "ed:cost",
+      "@context": {
+        "tuition": "https://schema.org/price",
+        "attendance": "https://schema.org/totalPrice",
+        "netPrice": "https://schema.org/priceComponent"
+      }
+    },
+    "Earnings": {
+      "@id": "ed:earnings",
+      "@context": {
+        "median": "https://schema.org/value",
+        "p25": "https://schema.org/lowPrice",
+        "p75": "https://schema.org/highPrice",
+        "yearsAfter": "https://schema.org/duration"
+      }
+    },
+    "Completion": {
+      "@id": "ed:completion",
+      "@context": {
+        "rate": "https://schema.org/percentage",
+        "title": "https://schema.org/educationalCredentialAwarded"
+      }
+    },
+    "Dataset": {
+      "@id": "https://schema.org/Dataset",
+      "@context": {
+        "id": "https://schema.org/identifier",
+        "title": "https://schema.org/name",
+        "description": "https://schema.org/description",
+        "publisher": "https://schema.org/publisher",
+        "license": "https://schema.org/license"
+      }
+    }
+  }
+}

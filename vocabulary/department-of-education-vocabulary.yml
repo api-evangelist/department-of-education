@@ -1,0 +1,73 @@
+name: Department of Education Vocabulary
+description: >-
+  Shared vocabulary of terms used across the U.S. Department of Education
+  public APIs and data assets including College Scorecard, IPEDS, EDFacts,
+  and the Open Data Platform.
+terms:
+  - term: College Scorecard
+    definition: >-
+      A consumer-facing tool and API published by the Department of Education
+      with information about postsecondary institutions and their outcomes.
+  - term: IPEDS
+    definition: >-
+      The Integrated Postsecondary Education Data System operated by NCES that
+      collects annual data from postsecondary institutions participating in
+      federal student aid programs.
+  - term: EDFacts
+    definition: >-
+      A centralized data collection of PK-12 education data submitted by state
+      education agencies to the U.S. Department of Education.
+  - term: NCES
+    definition: >-
+      The National Center for Education Statistics, the primary federal entity
+      for collecting and analyzing education data.
+  - term: Open Data Platform (ODP)
+    definition: >-
+      The CKAN-based public data catalog at data.ed.gov that publishes the
+      Department's datasets with documentation and API access.
+  - term: NSLDS
+    definition: >-
+      The National Student Loan Data System, the U.S. Department of
+      Education's database for federal student aid records.
+  - term: Institution
+    definition: >-
+      A postsecondary college, university, or technical/vocational school
+      identified by its OPE ID and IPEDS UNITID.
+  - term: UNITID
+    definition: >-
+      The IPEDS unique institutional identifier used to join across College
+      Scorecard, IPEDS, and other federal datasets.
+  - term: OPE ID
+    definition: >-
+      The Office of Postsecondary Education identifier used by federal student
+      aid systems.
+  - term: Field of Study
+    definition: >-
+      A program of study at an institution categorized by CIP code.
+  - term: CIP Code
+    definition: >-
+      The Classification of Instructional Programs taxonomy used to identify
+      academic programs.
+  - term: Cost of Attendance
+    definition: >-
+      The total estimated annual cost of attending an institution including
+      tuition, fees, and living expenses.
+  - term: Net Price
+    definition: >-
+      The cost of attendance minus the average grant aid awarded to students.
+  - term: Earnings After Enrollment
+    definition: >-
+      Median earnings of former students measured a fixed number of years
+      after entry into the institution.
+  - term: Completion Rate
+    definition: >-
+      The percentage of full-time, first-time students who complete a degree
+      or certificate within a defined timeframe.
+  - term: Dataset
+    definition: >-
+      A collection of related data files published on the Open Data Platform
+      with metadata, documentation, and download endpoints.
+  - term: API Key
+    definition: >-
+      A unique identifier issued by api.data.gov that must accompany every
+      authenticated request to the College Scorecard API.
