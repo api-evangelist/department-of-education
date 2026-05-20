@@ -150,6 +150,8 @@ apis:
         email: EDFacts@ed.gov
         url: https://www2.ed.gov/about/inits/ed/edfacts/index.html
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/usedgov
   - type: Website
     url: https://www.ed.gov
   - type: Open Data Platform
