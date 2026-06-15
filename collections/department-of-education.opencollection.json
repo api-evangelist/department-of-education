@@ -1,0 +1,102 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "U.S. Department of Education — College Scorecard API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "api_key",
+      "value": "{{api_key}}",
+      "placement": "query"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Schools",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query schools",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.data.gov/ed/collegescorecard/v1/schools",
+            "params": [
+              {
+                "name": "api_key",
+                "value": "",
+                "type": "query",
+                "description": "api.data.gov API key"
+              },
+              {
+                "name": "fields",
+                "value": "",
+                "type": "query",
+                "description": "Comma-separated list of fields to return"
+              },
+              {
+                "name": "school.name",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "school.state",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "school.city",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "zip",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "distance",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "sort",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "page",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "per_page",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "keys_nested",
+                "value": "",
+                "type": "query",
+                "description": "Return nested JSON instead of dotted keys"
+              },
+              {
+                "name": "all_programs_nested",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Retrieve a paginated, filterable, sortable list of postsecondary\ninstitutions. Fields are dot-notation paths into the data dictionary\n(for example, `school.name`, `latest.cost.tuition.in_state`).\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

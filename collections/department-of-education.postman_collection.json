@@ -1,0 +1,728 @@
+{
+  "item": [
+    {
+      "id": "dfbd1546-1da6-43c0-a2d8-9eb93c460b12",
+      "name": "Schools",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "343b3cc2-8ce7-4095-aa19-8f2ca233fa8e",
+          "name": "Query schools",
+          "request": {
+            "name": "Query schools",
+            "description": {
+              "content": "Retrieve a paginated, filterable, sortable list of postsecondary\ninstitutions. Fields are dot-notation paths into the data dictionary\n(for example, `school.name`, `latest.cost.tuition.in_state`).\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "schools"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "api_key",
+                  "value": "<string>",
+                  "description": "(Required) api.data.gov API key"
+                },
+                {
+                  "disabled": false,
+                  "key": "fields",
+                  "value": "<string>",
+                  "description": "Comma-separated list of fields to return"
+                },
+                {
+                  "disabled": false,
+                  "key": "school.name",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "school.state",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "school.city",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "zip",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "distance",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "sort",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "disabled": false,
+                  "key": "per_page",
+                  "value": "20"
+                },
+                {
+                  "disabled": false,
+                  "key": "keys_nested",
+                  "value": "<boolean>",
+                  "description": "Return nested JSON instead of dotted keys"
+                },
+                {
+                  "disabled": false,
+                  "key": "all_programs_nested",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "99df6b67-7cc2-4230-98bc-840437f02d90",
+              "name": "Schools page",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"metadata\": {\n    \"page\": 259,\n    \"total\": 3979,\n    \"per_page\": 5110\n  },\n  \"results\": [\n    {\n      \"id\": 6930,\n      \"school.name\": \"string\",\n      \"school.city\": \"string\",\n      \"school.state\": \"string\",\n      \"school.zip\": \"string\",\n      \"school.school_url\": \"string\",\n      \"school.accreditor\": \"string\",\n      \"latest.student.size\": 655,\n      \"latest.admissions.admission_rate.overall\": 9744.921319059347,\n      \"latest.cost.tuition.in_state\": 1237.7447275017062,\n      \"latest.cost.tuition.out_of_state\": 6429.566929782065,\n      \"latest.completion.rate_suppressed.overall\": 8761.18423890091\n    },\n    {\n      \"id\": 8178,\n      \"school.name\": \"string\",\n      \"school.city\": \"string\",\n      \"school.state\": \"string\",\n      \"school.zip\": \"string\",\n      \"school.school_url\": \"string\",\n      \"school.accreditor\": \"string\",\n      \"latest.student.size\": 8385,\n      \"latest.admissions.admission_rate.overall\": 7029.845267125143,\n      \"latest.cost.tuition.in_state\": 7304.007825123349,\n      \"latest.cost.tuition.out_of_state\": 5960.381217940178,\n      \"latest.completion.rate_suppressed.overall\": 410.5209713263969\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "d3a48eed-6605-4920-9350-cc76a4c38a81",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "02597f65-0170-4088-8664-209327e75d89",
+              "name": "Missing or invalid API key",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "41d5ddae-3bd4-40ab-be7b-d617161e2559",
+              "name": "Forbidden",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Forbidden",
+              "code": 403,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "e7793ece-fe8c-4012-ab8a-718b0751edd1",
+              "name": "Not found",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Not Found",
+              "code": 404,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "badeab8e-8681-4632-9d25-09c93d09bc14",
+              "name": "Rate limit exceeded",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "63fc4a37-5cc4-4247-8f83-3aadd1109ffc",
+              "name": "Server error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "schools"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "api_key",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "fields",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.name",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.state",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "school.city",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "zip",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "distance",
+                      "value": "10mi"
+                    },
+                    {
+                      "key": "sort",
+                      "value": "latest.student.size:desc"
+                    },
+                    {
+                      "key": "page",
+                      "value": "0"
+                    },
+                    {
+                      "key": "per_page",
+                      "value": "20"
+                    },
+                    {
+                      "key": "keys_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "all_programs_nested",
+                      "value": "<boolean>"
+                    },
+                    {
+                      "key": "api_key",
+                      "value": "<API Key>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.data.gov/ed/collegescorecard/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "api_key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "query"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "62b2612b-4e30-45a3-8aef-1774c651fda5",
+    "name": "U.S. Department of Education — College Scorecard API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The College Scorecard API exposes institution-level data on U.S. colleges and\nuniversities, including admissions, costs, student demographics, completion,\nearnings outcomes, programs (CIP), and repayment. Hosted on api.data.gov; an\napi.data.gov key is required and rate limits default to 1,000 requests per\nIP per hour.\n\n\nContact Support:\n Name: College Scorecard",
+      "type": "text/plain"
+    }
+  }
+}
