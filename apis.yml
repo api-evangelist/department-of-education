@@ -9,7 +9,7 @@ description: >-
   Data Platform (ODP) at data.ed.gov for postsecondary outcomes, institutional
   characteristics, and federal education programs.
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - College Scorecard
   - Education
@@ -39,7 +39,7 @@ apis:
       System (NSLDS), and U.S. Department of the Treasury sources, including
       cost, completion, earnings, debt, and demographic outcomes. Requests
       require an api.data.gov API key passed via the api_key query parameter.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://collegescorecard.ed.gov/data/
     baseURL: https://api.data.gov/ed/collegescorecard/v1
     tags:
@@ -71,7 +71,7 @@ apis:
       retrieving, and downloading the Department's public datasets. The API
       surface mirrors CKAN package, resource, group, and search actions over
       JSON.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://data.ed.gov/
     baseURL: https://data.ed.gov/api/3
     tags:
@@ -101,7 +101,7 @@ apis:
       Access databases, and a Find Your College tool rather than a public REST
       API; many of these datasets are also exposed via the College Scorecard
       and ODP APIs.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://nces.ed.gov/ipeds
     baseURL: https://api.example.com
     tags:
@@ -130,7 +130,7 @@ apis:
       data to the U.S. Department of Education. EDFacts data are published as
       downloadable files and are also accessible through partner APIs such
       as the Urban Institute Education Data Explorer.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www2.ed.gov/about/inits/ed/edfacts/index.html
     baseURL: https://api.example.com
     tags:
