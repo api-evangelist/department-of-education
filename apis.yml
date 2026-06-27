@@ -57,7 +57,7 @@ apis:
         url: https://collegescorecard.ed.gov/data/
       - type: GitHub
         url: https://github.com/RTICWDT/college-scorecard
-      - type: SignUp
+      - type: Signup
         url: https://api.data.gov/signup/
     contact:
       - FN: College Scorecard
@@ -156,7 +156,7 @@ common:
     url: https://www.ed.gov
   - type: Open Data Platform
     url: https://data.ed.gov/
-  - type: Developer Portal
+  - type: DeveloperPortal
     url: https://api.data.gov/
   - type: NCES
     url: https://nces.ed.gov/
