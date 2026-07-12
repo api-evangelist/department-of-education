@@ -150,6 +150,10 @@ apis:
         email: EDFacts@ed.gov
         url: https://www2.ed.gov/about/inits/ed/edfacts/index.html
 common:
+  - type: DomainSecurity
+    url: security/department-of-education-domain-security.yml
+  - type: Authentication
+    url: authentication/department-of-education-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/usedgov
   - type: Website
@@ -180,6 +184,8 @@ common:
     url: vocabulary/department-of-education-vocabulary.yml
   - type: Capabilities
     url: capabilities/department-of-education-capabilities.yml
+  - url: https://www.ed.gov/rss.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
