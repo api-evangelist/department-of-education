@@ -150,6 +150,8 @@ apis:
         email: EDFacts@ed.gov
         url: https://www2.ed.gov/about/inits/ed/edfacts/index.html
 common:
+  - type: AgenticAccess
+    url: agentic-access/department-of-education-agentic-access.yml
   - type: DomainSecurity
     url: security/department-of-education-domain-security.yml
   - type: Authentication
