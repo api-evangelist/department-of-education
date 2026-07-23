@@ -1,0 +1,168 @@
+openapi: 3.1.0
+info:
+  title: U.S. Department of Education — College Scorecard Schools API
+  description: 'The College Scorecard API exposes institution-level data on U.S. colleges and
+
+    universities, including admissions, costs, student demographics, completion,
+
+    earnings outcomes, programs (CIP), and repayment. Hosted on api.data.gov; an
+
+    api.data.gov key is required and rate limits default to 1,000 requests per
+
+    IP per hour.
+
+    '
+  version: 1.0.0
+  contact:
+    name: College Scorecard
+    url: https://collegescorecard.ed.gov/data/api-documentation/
+servers:
+- url: https://api.data.gov/ed/collegescorecard/v1
+  description: College Scorecard v1 (api.data.gov)
+security:
+- ApiKeyQuery: []
+tags:
+- name: Schools
+paths:
+  /schools:
+    get:
+      summary: Query schools
+      description: 'Retrieve a paginated, filterable, sortable list of postsecondary
+
+        institutions. Fields are dot-notation paths into the data dictionary
+
+        (for example, `school.name`, `latest.cost.tuition.in_state`).
+
+        '
+      operationId: querySchools
+      tags:
+      - Schools
+      parameters:
+      - name: api_key
+        in: query
+        required: true
+        schema:
+          type: string
+        description: api.data.gov API key
+      - name: fields
+        in: query
+        schema:
+          type: string
+        description: Comma-separated list of fields to return
+      - name: school.name
+        in: query
+        schema:
+          type: string
+      - name: school.state
+        in: query
+        schema:
+          type: string
+          description: Two-letter state code
+      - name: school.city
+        in: query
+        schema:
+          type: string
+      - name: zip
+        in: query
+        schema:
+          type: string
+      - name: distance
+        in: query
+        schema:
+          type: string
+          example: 10mi
+      - name: sort
+        in: query
+        schema:
+          type: string
+          example: latest.student.size:desc
+      - name: page
+        in: query
+        schema:
+          type: integer
+          default: 0
+      - name: per_page
+        in: query
+        schema:
+          type: integer
+          default: 20
+          maximum: 100
+      - name: keys_nested
+        in: query
+        schema:
+          type: boolean
+        description: Return nested JSON instead of dotted keys
+      - name: all_programs_nested
+        in: query
+        schema:
+          type: boolean
+      responses:
+        '200':
+          description: Schools page
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SchoolsResponse'
+        '400':
+          description: Bad request
+        '401':
+          description: Missing or invalid API key
+        '403':
+          description: Forbidden
+        '404':
+          description: Not found
+        '429':
+          description: Rate limit exceeded
+        '500':
+          description: Server error
+components:
+  schemas:
+    School:
+      type: object
+      description: Institution record with nested or dotted fields per the data dictionary.
+      properties:
+        id:
+          type: integer
+        school.name:
+          type: string
+        school.city:
+          type: string
+        school.state:
+          type: string
+        school.zip:
+          type: string
+        school.school_url:
+          type: string
+        school.accreditor:
+          type: string
+        latest.student.size:
+          type: integer
+        latest.admissions.admission_rate.overall:
+          type: number
+        latest.cost.tuition.in_state:
+          type: number
+        latest.cost.tuition.out_of_state:
+          type: number
+        latest.completion.rate_suppressed.overall:
+          type: number
+    SchoolsResponse:
+      type: object
+      properties:
+        metadata:
+          type: object
+          properties:
+            page:
+              type: integer
+            total:
+              type: integer
+            per_page:
+              type: integer
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/School'
+  securitySchemes:
+    ApiKeyQuery:
+      type: apiKey
+      in: query
+      name: api_key
