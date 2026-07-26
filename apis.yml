@@ -9,7 +9,20 @@ description: >-
   Data Platform (ODP) at data.ed.gov for postsecondary outcomes, institutional
   characteristics, and federal education programs.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+    - plans
+    - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/department-of-education.png
 tags:
   - College Scorecard
   - Education
@@ -23,7 +36,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/department-of-education/refs/heads/main/apis.yml
 created: '2024-12-03'
-modified: '2026-04-28'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 kind: government
 position: Producer
@@ -32,13 +45,11 @@ apis:
   - aid: department-of-education:college-scorecard-api
     name: College Scorecard API
     description: >-
-      The College Scorecard API provides programmatic access to postsecondary
-      institution and field-of-study data published by the U.S. Department of
-      Education. The API exposes more than 6,000 schools and over 1,900 data
-      points per institution drawn from IPEDS, the National Student Loan Data
-      System (NSLDS), and U.S. Department of the Treasury sources, including
-      cost, completion, earnings, debt, and demographic outcomes. Requests
-      require an api.data.gov API key passed via the api_key query parameter.
+      The College Scorecard API provides programmatic access to postsecondary institution and field-of-study
+      data published by the U.S. Department of Education. The API exposes more than 6,000 schools and over
+      1,900 data points per institution drawn from IPEDS, the National Student Loan Data System (NSLDS),
+      and U.S. Department of the Treasury sources, including cost, completion, earnings, debt, and demographic
+      outcomes. Requests require an api.data.gov API key passed via the api_key query parameter.
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://collegescorecard.ed.gov/data/
     baseURL: https://api.data.gov/ed/collegescorecard/v1
@@ -66,11 +77,9 @@ apis:
   - aid: department-of-education:open-data-platform-api
     name: Department of Education Open Data Platform API
     description: >-
-      The Department of Education Open Data Platform (ODP) at data.ed.gov is
-      built on CKAN and exposes a CKAN-compatible REST API for searching,
-      retrieving, and downloading the Department's public datasets. The API
-      surface mirrors CKAN package, resource, group, and search actions over
-      JSON.
+      The Department of Education Open Data Platform (ODP) at data.ed.gov is built on CKAN and exposes a
+      CKAN-compatible REST API for searching, retrieving, and downloading the Department's public datasets.
+      The API surface mirrors CKAN package, resource, group, and search actions over JSON.
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://data.ed.gov/
     baseURL: https://data.ed.gov/api/3
@@ -94,13 +103,11 @@ apis:
   - aid: department-of-education:ipeds-data
     name: IPEDS Data
     description: >-
-      The Integrated Postsecondary Education Data System (IPEDS) gathers data
-      annually from every college, university, and technical and vocational
-      institution that participates in the federal student financial aid
-      programs. NCES distributes IPEDS data via downloadable CSV files,
-      Access databases, and a Find Your College tool rather than a public REST
-      API; many of these datasets are also exposed via the College Scorecard
-      and ODP APIs.
+      The Integrated Postsecondary Education Data System (IPEDS) gathers data annually from every college,
+      university, and technical and vocational institution that participates in the federal student financial
+      aid programs. NCES distributes IPEDS data via downloadable CSV files, Access databases, and a Find
+      Your College tool rather than a public REST API; many of these datasets are also exposed via the College
+      Scorecard and ODP APIs.
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://nces.ed.gov/ipeds
     baseURL: https://api.example.com
@@ -122,33 +129,16 @@ apis:
     contact:
       - FN: NCES IPEDS
         url: https://nces.ed.gov/ipeds
-  - aid: department-of-education:edfacts-data
-    name: EDFacts Data
-    description: >-
-      EDFacts is a centralized data collection through which state education
-      agencies submit pre-kindergarten through grade 12 (PK-12) education
-      data to the U.S. Department of Education. EDFacts data are published as
-      downloadable files and are also accessible through partner APIs such
-      as the Urban Institute Education Data Explorer.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://www2.ed.gov/about/inits/ed/edfacts/index.html
-    baseURL: https://api.example.com
+  - aid: department-of-education:department-of-education-schools-api
+    name: Department of Education Schools API
+    description: The Schools API from Department of Education — 1 operation(s) for schools.
+    humanURL: https://collegescorecard.ed.gov/data/
+    baseURL: https://api.data.gov/ed/collegescorecard/v1
     tags:
-      - Bulk Data
-      - EDFacts
-      - K-12
-      - State Data
+      - Schools
     properties:
-      - type: Documentation
-        url: https://www2.ed.gov/about/inits/ed/edfacts/index.html
-      - type: Data Files
-        url: https://www2.ed.gov/about/inits/ed/edfacts/data-files/index.html
-      - type: Education Data Explorer
-        url: https://educationdata.urban.org/documentation/
-    contact:
-      - FN: EDFacts
-        email: EDFacts@ed.gov
-        url: https://www2.ed.gov/about/inits/ed/edfacts/index.html
+      - type: OpenAPI
+        url: openapi/department-of-education-schools-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/department-of-education-agentic-access.yml
@@ -188,6 +178,8 @@ common:
     url: capabilities/department-of-education-capabilities.yml
   - url: https://www.ed.gov/rss.xml
     type: Blog
+  - type: About
+    url: https://www2.ed.gov/about/inits/ed/edfacts/index.html
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

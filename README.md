@@ -100,12 +100,6 @@ The Integrated Postsecondary Education Data System (IPEDS) gathers data annually
 - [Postman Collection](collections/department-of-education.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
 - [Open Collection](collections/department-of-education.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
 
-### EDFacts Data
-
-EDFacts is a centralized data collection through which state education agencies submit pre-kindergarten through grade 12 (PK-12) education data to the U.S. Department of Education. EDFacts data are published as downloadable files and are also accessible through partner APIs such as the Urban Institute Education Data Explorer.
-
-- **Human URL:** [https://www2.ed.gov/about/inits/ed/edfacts/index.html](https://www2.ed.gov/about/inits/ed/edfacts/index.html)
-- **Base URL:** `https://api.example.com`
 
 #### Tags
 
