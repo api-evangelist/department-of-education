@@ -1,0 +1,14 @@
+{
+  "provider": "department-of-education",
+  "sources": [
+    "department-of-education-schools-api-openapi.yml"
+  ],
+  "outputs": [
+    "department-of-education-schools-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
