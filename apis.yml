@@ -174,8 +174,6 @@ common:
     url: json-ld/department-of-education-context.jsonld
   - type: Vocabulary
     url: vocabulary/department-of-education-vocabulary.yml
-  - type: Capabilities
-    url: capabilities/department-of-education-capabilities.yml
   - url: https://www.ed.gov/rss.xml
     type: Blog
   - type: About
