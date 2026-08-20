@@ -26,6 +26,16 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/department
 tags:
   - College Scorecard
   - Education
+  - Federal-Government
+  - Higher Education
+  - IPEDS
+  - K-12
+  - NCES
+  - Open Data
+  - Postsecondary
+tags_raw:
+  - College Scorecard
+  - Education
   - Federal Government
   - Higher Education
   - IPEDS
