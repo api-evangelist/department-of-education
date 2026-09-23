@@ -1,4 +1,4 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
   title: U.S. Department of Education — College Scorecard Schools API
   description: 'The College Scorecard API exposes institution-level data on U.S. colleges and
@@ -9,9 +9,7 @@ info:
 
     api.data.gov key is required and rate limits default to 1,000 requests per
 
-    IP per hour.
-
-    '
+    IP per hour.'
   version: 1.0.0
   contact:
     name: College Scorecard
@@ -31,9 +29,7 @@ paths:
 
         institutions. Fields are dot-notation paths into the data dictionary
 
-        (for example, `school.name`, `latest.cost.tuition.in_state`).
-
-        '
+        (for example, `school.name`, `latest.cost.tuition.in_state`).'
       operationId: querySchools
       tags:
       - Schools
