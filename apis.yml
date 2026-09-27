@@ -11,15 +11,19 @@ description: >-
 type: Index
 deliveryModel:
   model: saas
-  open_source: false
+  license_evidence:
+    not_product:
+    - rticwdt/college-scorecard
+  open_source: unknown
   commercial: true
   callable_host: true
   label: Hosted service · you call their endpoint
-  confidence: high
+  confidence: low
   source:
   - openapi
   - pricing
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: freemium
@@ -39,7 +43,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/department
 tags:
   - College Scorecard
   - Education
-  - Federal-Government
+  - Federal Government
   - Higher Education
   - IPEDS
   - K-12
@@ -56,6 +60,7 @@ tags_raw:
   - NCES
   - Open Data
   - Postsecondary
+  - Federal-Government
 url: >-
   https://raw.githubusercontent.com/api-evangelist/department-of-education/refs/heads/main/apis.yml
 created: '2024-12-03'
