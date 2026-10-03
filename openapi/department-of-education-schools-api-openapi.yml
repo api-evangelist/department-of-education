@@ -113,6 +113,22 @@ paths:
           description: Server error
 components:
   schemas:
+    SchoolsResponse:
+      type: object
+      properties:
+        metadata:
+          type: object
+          properties:
+            page:
+              type: integer
+            total:
+              type: integer
+            per_page:
+              type: integer
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/School'
     School:
       type: object
       description: Institution record with nested or dotted fields per the data dictionary.
@@ -141,22 +157,6 @@ components:
           type: number
         latest.completion.rate_suppressed.overall:
           type: number
-    SchoolsResponse:
-      type: object
-      properties:
-        metadata:
-          type: object
-          properties:
-            page:
-              type: integer
-            total:
-              type: integer
-            per_page:
-              type: integer
-        results:
-          type: array
-          items:
-            $ref: '#/components/schemas/School'
   securitySchemes:
     ApiKeyQuery:
       type: apiKey
