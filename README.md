@@ -1,4 +1,4 @@
-# Department of Education (department-of-education)
+# Department of Education
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,139 +66,131 @@
 
 The U.S. Department of Education (ED) is a federal agency that manages and coordinates federal assistance to education and establishes policy for it. ED's mission is to promote student achievement and preparation for global competitiveness, and to ensure equal access to education. The Department exposes a portfolio of public APIs through api.data.gov, NCES, and the Open Data Platform (ODP) at data.ed.gov for postsecondary outcomes, institutional characteristics, and federal education programs.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/department-of-education/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/department-of-education/refs/heads/main/apis.yml)
+**Areas:** College Scorecard · Education · Federal Government · Higher Education · IPEDS · K-12 · NCES · Open Data · Postsecondary
 
-## Scope
+## Department of Education on APIs.io
 
-- **Type:** Index
-- **Position:** Producer
-- **Access:** Public
+Everything profiled for Department of Education is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/department-of-education/](https://apis.io/providers/department-of-education/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (4)
 
-- College Scorecard
-- Education
-- Federal Government
-- Higher Education
-- IPEDS
-- K-12
-- NCES
-- Open Data
-- Postsecondary
+- [College Scorecard API](https://apis.io/apis/department-of-education/college-scorecard-api/) — The College Scorecard API provides programmatic access to postsecondary institution and field-of-study data published by the U.S. Department of Education.…
+- [Department of Education Open Data Platform API](https://apis.io/apis/department-of-education/open-data-platform-api/) — The Department of Education Open Data Platform (ODP) at data.ed.gov is built on CKAN and exposes a CKAN-compatible REST API for searching, retrieving, and…
+- [IPEDS Data](https://apis.io/apis/department-of-education/ipeds-data/) — The Integrated Postsecondary Education Data System (IPEDS) gathers data annually from every college, university, and technical and vocational institution…
+- [Department of Education Schools API](https://apis.io/apis/department-of-education/department-of-education-schools-api/) — The Schools API from Department of Education — 1 operation(s) for schools.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-12-03
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### College Scorecard API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The College Scorecard API provides programmatic access to postsecondary institution and field-of-study data published by the U.S. Department of Education. The API exposes more than 6,000 schools and over 1,900 data points per institution drawn from IPEDS, the National Student Loan Data System (NSLDS), and U.S. Department of the Treasury sources, including cost, completion, earnings, debt, and demographic outcomes. Requests require an api.data.gov API key passed via the api_key query parameter.
+- [Department Of Education Agentic Access](https://apis.io/agentic-access/department-of-education/department-of-education-agentic-access/)
 
-- **Human URL:** [https://collegescorecard.ed.gov/data/](https://collegescorecard.ed.gov/data/)
-- **Base URL:** `https://api.data.gov/ed/collegescorecard/v1`
+#### JSON-LD (1)
 
-#### Tags
+Linked-data contexts for the provider's vocabulary.
 
-- College Scorecard
-- Earnings
-- Higher Education
-- Postsecondary
-- Schools
+- [Department Of Education Context](https://apis.io/jsonld/department-of-education/department-of-education-context/)
 
-#### Properties
+#### Vocabulary (1)
 
-- [Documentation](https://collegescorecard.ed.gov/data/api-documentation/)
-- [A P I](https://collegescorecard.ed.gov/data/api/)
-- [Data](https://collegescorecard.ed.gov/data/)
-- [Git Hub](https://github.com/RTICWDT/college-scorecard)
-- [Sign Up](https://api.data.gov/signup/)
-- [Postman Collection](collections/department-of-education.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-education.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+The provider's domain terms, defined.
 
-### Department of Education Open Data Platform API
+- [Department of Education Vocabulary](https://apis.io/vocabularies/department-of-education/department-of-education-vocabulary/)
 
-The Department of Education Open Data Platform (ODP) at data.ed.gov is built on CKAN and exposes a CKAN-compatible REST API for searching, retrieving, and downloading the Department's public datasets. The API surface mirrors CKAN package, resource, group, and search actions over JSON.
+#### Collections (2)
 
-- **Human URL:** [https://data.ed.gov/](https://data.ed.gov/)
-- **Base URL:** `https://data.ed.gov/api/3`
+Postman and Open Collection request collections.
 
-#### Tags
+- [U.S. Department of Education — College Scorecard API](https://apis.io/collections/department-of-education/open-department-of-education/)
+- [U.S. Department of Education — College Scorecard Schools API](https://apis.io/collections/department-of-education/open-department-of-education-schools-api/)
 
-- CKAN
-- Datasets
-- Open Data
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://data.ed.gov/about)
-- [F A Q](https://data.ed.gov/faq)
-- [User  Guide](https://data.ed.gov/pages/publichelp)
-- [C K A N  Reference](https://docs.ckan.org/en/2.8/api/)
-- [Postman Collection](collections/department-of-education.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-education.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Department Of Education Authentication](https://apis.io/security/department-of-education/department-of-education-authentication/)
+- [Department Of Education Domain Security](https://apis.io/security/department-of-education/department-of-education-domain-security/)
 
-### IPEDS Data
+#### Plans and pricing (1)
 
-The Integrated Postsecondary Education Data System (IPEDS) gathers data annually from every college, university, and technical and vocational institution that participates in the federal student financial aid programs. NCES distributes IPEDS data via downloadable CSV files, Access databases, and a Find Your College tool rather than a public REST API; many of these datasets are also exposed via the College Scorecard and ODP APIs.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://nces.ed.gov/ipeds](https://nces.ed.gov/ipeds)
-- **Base URL:** `https://api.example.com`
+- [Department Of Education Plans Pricing](https://apis.io/plans/department-of-education/department-of-education-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Bulk Data
-- Higher Education
-- IPEDS
-- NCES
-- Postsecondary
+Published request limits.
 
-#### Properties
+- [Department Of Education Rate Limits](https://apis.io/rate-limits/department-of-education/department-of-education-rate-limits/)
 
-- [Documentation](https://nces.ed.gov/ipeds)
-- [Use the  Data](https://nces.ed.gov/ipeds/use-the-data)
-- [Find  Your  College](https://nces.ed.gov/ipeds/find-your-college)
-- [Downloads](https://nces.ed.gov/ipeds/use-the-data/download-access-database)
-- [Postman Collection](collections/department-of-education.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-education.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
+What the API costs to run, by operation.
 
-#### Tags
+- [Department Of Education Finops](https://apis.io/finops/department-of-education/department-of-education-finops/)
 
-- Bulk Data
-- EDFacts
-- K-12
-- State Data
+## Where to find this API
 
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://www2.ed.gov/about/inits/ed/edfacts/index.html)
-- [Data  Files](https://www2.ed.gov/about/inits/ed/edfacts/data-files/index.html)
-- [Education  Data  Explorer](https://educationdata.urban.org/documentation/)
-- [Postman Collection](collections/department-of-education.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/department-of-education.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/usedgov)
 - [Website](https://www.ed.gov)
-- [Open  Data  Platform](https://data.ed.gov/)
-- [Developer  Portal](https://api.data.gov/)
-- [N C E S](https://nces.ed.gov/)
-- [College  Scorecard](https://collegescorecard.ed.gov/)
-- [Federal  Student  Aid](https://studentaid.gov)
-- [Data.gov  E D  Catalog](https://catalog.data.gov/dataset?organization=ed-gov)
-- [News](https://www.ed.gov/news)
-- [Contact](https://www.ed.gov/about/contact-us)
-- [Privacy Policy](https://www.ed.gov/notices/privacy)
-- [GitHub Organization](https://github.com/usedgov)
-- [JSON-LD](json-ld/department-of-education-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Vocabulary](vocabulary/department-of-education-vocabulary.yml)
-- [Capabilities](capabilities/department-of-education-capabilities.yml)
+- [Blog](https://www.ed.gov/rss.xml)
+- [Privacy policy](https://www.ed.gov/notices/privacy)
+- [GitHub](https://github.com/usedgov)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 33.6** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 67.0 |
+| Contract quality | 53.0 |
+| Contract governance | 13.6 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 21.1 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/department-of-education/](https://apis.io/providers/department-of-education/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Department of Education: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/department-of-education/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
